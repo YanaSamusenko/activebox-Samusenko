@@ -1,0 +1,77 @@
+.activebox {
+  padding: 70px 0px 30px 0px;
+  background-color: $_dark-blue;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 70%;
+    left: 0;
+
+    background-color: $_bl_blue;
+  }
+}
+.footer-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.footer-card {
+  width: 370px;
+}
+.footer-title {
+  text-align: center;
+  font-size: $_18px;
+  font-weight: 600;
+  color: $_white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.footer-text {
+  text-align: center;
+  p {
+    font-size: $_18px;
+    font-weight: 300;
+    color: $_white;
+  }
+}
+.social-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+  width: 170px;
+}
+.social-icon-footer {
+  a {
+    font-size: $_36px;
+    color: $_gray;
+    font-weight: 500;
+  }
+}
+
+.aside {
+  padding-top: 25px;
+  max-width: 370px;
+  margin: auto;
+  text-align: center;
+
+  p {
+    font-size: $_18px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: $_brown-gray;
+
+    span {
+      color: $_white;
+    }
+  }
+}

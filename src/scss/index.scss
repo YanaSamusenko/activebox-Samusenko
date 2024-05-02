@@ -1,0 +1,129 @@
+@import "./var.scss";
+@import "./mixins.scss";
+@import "./cdn.scss";
+@import "./libs/slick.scss";
+@import "./header.scss";
+@import "./features.scss";
+@import "./work.scss";
+@import "./ourtime.scss";
+@import "./testimonials.scss";
+@import "./download.scss";
+@import "./footer.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: auto;
+  position: relative;
+  z-index: 3;
+}
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+    padding: 0 15px;
+  }
+}
+@media all and (max-width: 992px) {
+  .container {
+    max-width: 750px;
+    padding: 0 15px;
+  }
+}
+@media all and (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+@media all and (max-width: 566px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .header-burger {
+    display: block;
+  }
+  .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 120px 5px;
+    background-image: url("../img/bg/bghead.png");
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $_dark-blue-mask;
+    }
+  }
+  .navigation-list {
+    display: block;
+  }
+  .navigation-list-item {
+    display: block;
+    padding: 10 0px;
+  }
+  .header.open .navigation {
+    transform: translateX(100%);
+  }
+}
+@media all and (max-width: 320px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .header-burger {
+    display: block;
+  }
+  .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 120 100 100 15px;
+    background-image: url("../img/bg/bghead.png");
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $_dark-blue-mask;
+    }
+  }
+  .navigation-list {
+    display: block;
+  }
+  .navigation-list-item {
+    display: block;
+    padding: 10 0px;
+  }
+  .header.open .navigation {
+    transform: translateX(100%);
+  }
+}

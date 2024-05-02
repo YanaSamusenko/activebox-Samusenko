@@ -1,0 +1,33 @@
+.slider {
+  display: flex;
+}
+.slider-item {
+  width: 50%;
+  height: 490px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.slider-text {
+  max-width: 475;
+  text-align: left;
+  line-height: 50px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+
+  p {
+    font-family: "Cardo";
+    font-size: $_36px;
+    font-weight: 400;
+    color: $_white;
+  }
+}

@@ -1,0 +1,63 @@
+.ourtime {
+  background-color: white;
+  padding: 100px 0px;
+  z-index: 0;
+}
+
+.ourtime-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+}
+.ourtime-card {
+  width: 270px;
+}
+.ourtime-img {
+  width: 270px;
+  overflow: hidden;
+  height: 270px;
+  margin-bottom: 30px;
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+.name-card-title {
+  font-size: $_24px;
+  font-weight: 700;
+  color: $_lt-black;
+  margin-bottom: 5px;
+}
+.subtitle {
+  font-size: $_18px;
+  font-weight: 400;
+  color: $_bright-red;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+.ourtime-text {
+  margin-bottom: 37px;
+  p {
+    font-size: $_18px;
+    font-weight: 300;
+    color: $_text-gray;
+  }
+}
+
+.social-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  margin-right: 6px;
+  a {
+    font-size: $_36px;
+    color: $_gray;
+    font-weight: 500;
+  }
+}
